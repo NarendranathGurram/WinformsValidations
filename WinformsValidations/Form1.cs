@@ -21,16 +21,16 @@ namespace WinformsValidations
         {
             if(ValidateForm())
             {
-
-                
+                Form2 form = new Form2();
+                form.Show();                
             }
         }
 
         private void Vform_Load(object sender, EventArgs e)
         {
             BindCombobox();
-            FormValidationlist.Add(new Validation() { control = txtFName, Message = "First name Required" });
-            FormValidationlist.Add(new Validation() { control = txtLName, Message = "Last name Required" });
+            FormValidationlist.Add(new Validation() { control = txtFName, Message = "Please enter First name" });
+            FormValidationlist.Add(new Validation() { control = txtLName, Message = "Please enter Last name" });
             FormValidationlist.Add(new Validation() { control = cmbGender, Message = "Please select Gender" });
 
         }

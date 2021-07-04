@@ -36,6 +36,7 @@ namespace WinformsValidations
             this.label1 = new System.Windows.Forms.Label();
             this.cmbGender = new System.Windows.Forms.ComboBox();
             this.btnSave = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblFName
@@ -98,11 +99,22 @@ namespace WinformsValidations
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(312, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(74, 28);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Form 1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.cmbGender);
             this.Controls.Add(this.label1);
@@ -127,6 +139,7 @@ namespace WinformsValidations
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbGender;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Label label2;
     }
 }
 
